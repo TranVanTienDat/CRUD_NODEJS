@@ -1,0 +1,40 @@
+<!-- include header -->
+<%- include('include/_header.ejs') %>
+<!-- /include header -->
+
+<!-- main site -->
+<main id="site-main">
+  <div class="container">
+    <div class="box-nav d-flex-justify-between">
+      <a href="/add-user" class="border-shadow">
+        <span class="text-gradient"
+          >New user <i class="fa-solid fa-user"></i
+        ></span>
+      </a>
+    </div>
+
+    <!-- form handling -->
+    <form action="/" method="POST">
+      <table class="table">
+        <thead class="table-dark">
+          <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>GENDER</th>
+            <th>STATUS</th>
+            <th>ACTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <%- include('include/_show.ejs')%>
+        </tbody>
+      </table>
+    </form>
+  </div>
+</main>
+<!-- main site -->
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->
